@@ -15,7 +15,7 @@ public class Stack<e> {
         tail = null;
     }
 
-    // pushes data on stack
+    // pushes data on stacks
     public void addLastNode(e data) {
         // if the list is empty
         if (tail == null)
