@@ -60,7 +60,7 @@ public class TestMyStack {
 
                 }while (sentinel);
 
-                System.out.print("\nAdding value "+data+" as last node. \n" +
+                System.out.print("\nAdding value "+data+" to stack. \n" +
                         "Stack content before adding "+data+" is:\t");
                 myStack.printStack();//prints Stack before adding node
 
@@ -81,7 +81,7 @@ public class TestMyStack {
                 }
                 //else run method
                 else {
-                    System.out.print("\nMethod removeLastNode()\n" +
+                    System.out.print("\nMethod pop()\n" +
                             "Stack content before removing last node is:\t");
                     myStack.printStack();//prints Stack before adding node
 
@@ -110,7 +110,7 @@ public class TestMyStack {
                     System.out.print("\nStack is Empty");
                 }
                 else {
-                    System.out.print("\nMethod countNodes()\n" +
+                    System.out.print("\nMethod size()\n" +
                             "Stack Size:\t"+myStack.size());
                 }
 
@@ -142,20 +142,6 @@ public class TestMyStack {
                     myStack.printStack();
                 }
             }
-            //prints Stack in reverse
-            if(choice == 9){
-                //if Stack is empty
-                if(myStack.head==null){
-                    System.out.print("\nStack is Empty");
-                }
-                //prints Stack
-                else {
-                    System.out.print("\nMethod printInReverseStack()\n" +
-                            "Stack(In Reverse):\t");
-                    System.out.print(myStack.printInReverse(myStack.head));
-                }
-
-            }
 
 
         }while(choice!=7);
@@ -181,7 +167,7 @@ public class TestMyStack {
                         "4 – Get stack size \n" +
                         "5 – Is empty stack? \n" +
                         "6 - Print stack \n" +
-                        "7 - Exit program \n" +
+                        "7 - Exit program \n\n" +
                         "Enter option number:\t");
 
                 choice = scan.nextInt();

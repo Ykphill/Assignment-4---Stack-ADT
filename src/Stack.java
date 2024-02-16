@@ -29,6 +29,9 @@ public class Stack<E> {
     // method #4: remove the node on the top of the stack
     public void pop() {
         // if there are more than one node
+        if (head==null){
+            return;
+        }
         if (head.next != null) {
             Node<E> current = head; // creates a temp node = to head
             // iterates until at the second to last node
@@ -47,7 +50,8 @@ public class Stack<E> {
 
     // method #4: get the node on the top of the stack
     public E top() {
-        return tail.data;//return the top of the stack
+
+        return tail.data;//return the top of the stack]
     }
 
     // counts the number of nodes in  the stack
@@ -78,19 +82,13 @@ public class Stack<E> {
 
 
     // method #7: printInReverse (Recursive method)
-    public String printInReverse(Node<E> L) {
-        String list = ""; // String variable that holds reverse
-
-        // base case
-        if (L.next == null) {
-            return L.data + "   ";//
+    public void printInReverse() {
+        Node<E> temp;
+        temp = head;
+        while (temp != null) {
+            System.out.print(temp.data );
+            temp = temp.next;
         }
-        // recursive call
-        else {
-            list = printInReverse(L.next) + L.data + "   ";
-        }
-        return list;
-        // complete this method as recursive methods
     }
 
     // method to print out the list
