@@ -94,7 +94,7 @@ public class Stack<E> {
     }
 
     // method to print out the list
-    public void printList() {
+    public void printStack() {
         Node<E> temp;
         temp = head;
         while (temp != null) {
