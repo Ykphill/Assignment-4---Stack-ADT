@@ -17,7 +17,6 @@ public class TestMyStack {
         int choice = 0; //hold the user choice on the method they wish to call
         Boolean sentinel= true; // general sentinel value
         int data = 0; //initializes data that might be passed through
-        int index = 0; //initializes index that might be passed through
 
 
         //used for testing purposes
@@ -95,20 +94,22 @@ public class TestMyStack {
 
             //check if Stack is empty
             if(choice == 3){
+                //checks if stack is empty
                 if(myStack.isEmpty()==false){
                     System.out.print("\nStack is Empty");
-                }
+                }//informs user of top element on stack
                 else {
                     System.out.print("\nStack top element is:\t"+myStack.top());
                 }
 
             }
             
-            //printd Stack size
+            //printed Stack size
             if(choice == 4){
+                //check if stack is empty
                 if(myStack.head==null){
                     System.out.print("\nStack is Empty");
-                }
+                }//inform user of stack size
                 else {
                     System.out.print("\nMethod size()\n" +
                             "Stack Size:\t"+myStack.size());
@@ -118,9 +119,11 @@ public class TestMyStack {
 
             //check if Stack is empty
             if(choice == 5){
+                //tell user stack is empty
                 if(myStack.isEmpty()==false){
                     System.out.print("\nStack is Empty");
                 }
+                //tell user stack is populated
                 else {
                     System.out.print("\nStack is Populated\n" +
                             "Stack:\t");
@@ -159,7 +162,7 @@ public class TestMyStack {
 
             try {
 
-
+                //menu
                 System.out.print("\n\n--------MAIN MENU------- \n" +
                         "1 – Push element \n" +
                         "2 – Pop element  \n" +
@@ -172,10 +175,11 @@ public class TestMyStack {
 
                 choice = scan.nextInt();
                 scan.nextLine();
-
+                //allow user to escape if it is between 1-7
                 if(choice >= 1 && choice <= 7){
                     sentinel=false;
                 }
+                //inform user of there mistake
                 else {
                     sentinel= true;
                     System.out.println("\nplease only input values that are integers and between 1-7 ");

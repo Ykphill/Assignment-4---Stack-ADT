@@ -16,7 +16,6 @@ public class ReverseString {
         int choice = 0; //hold the user choice on the method they wish to call
         Boolean sentinel= true; // general sentinel value
         String data = ""; //initializes data that might be passed through
-        int index = 0; //initializes index that might be passed through
         String word=""; //word to be added to stack
         int spaces = 0; //counts the number of spaces
 
@@ -75,7 +74,7 @@ public class ReverseString {
                     //reverse string
                     for (int i = 0; i <data.length() ; i++) {
                         //if word end then it adds to stck
-                        if(data.charAt(i)==' '){
+                        if(data.charAt(i)==' '|| i+1==data.length()){
                             myStack.push(word);
                             word="";
                             spaces++;
@@ -85,14 +84,16 @@ public class ReverseString {
                         }
                     }
 
+
                     System.out.print("\nReversed string:\t");
 
-                    for (int i = 1; i <data.length()-1 ; i++) {
+                    for (int i = 1; i <data.length() ; i++) {
                         if(myStack.tail != null) {
 
                             System.out.print(myStack.top() + " ");
                             myStack.pop();
                         }
+
                     }
 
                 }
