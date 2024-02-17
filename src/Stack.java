@@ -5,17 +5,17 @@
 // Assignment: 4
 // IDE Name: Inteli J
 
-//class is use to make a stack to store data
+//class is used to make a stack to store data
 public class Stack<E> {
     public Node<E> head, tail;
 
-    // constructor method to create a list of objects with head, tail, and size.
+    // constructor method to create a list of objects with head, tail,
     public Stack() {
         head = null;
         tail = null;
     }
 
-    // pushes data on stacks
+    // pushes data ontop of stacks
     public void push(E data) {
         // if the list is empty
         if (tail == null)
@@ -28,15 +28,16 @@ public class Stack<E> {
 
     // method #4: remove the node on the top of the stack
     public void pop() {
-        // if there are more than one node
+
+        // if there are 0 nodes
         if (head==null){
             return;
-        }
+        }// if there are more than one node
         if (head.next != null) {
             Node<E> current = head; // creates a temp node = to head
             // iterates until at the second to last node
             while (current.next != tail) {
-                current = current.next;
+                current = current.next;//move to next node in list
             }
 
             Node<E> temp = tail;
@@ -56,7 +57,7 @@ public class Stack<E> {
 
     // counts the number of nodes in  the stack
     public int size() {
-        int listSize = 0;
+        int listSize = 0;//initializes the size too 0
         Node<E> temp = head;
 
         // iterate through nodes
@@ -71,27 +72,19 @@ public class Stack<E> {
 
     //tell the user if the list is empty
     public boolean isEmpty(){
-
+        //returns false if empty
         if(head==null){
             return false;
         }
+        //returns true if populated
         else {
             return true;
         }
     }
 
 
-    // method #7: printInReverse (Recursive method)
-    public void printInReverse() {
-        Node<E> temp;
-        temp = head;
-        while (temp != null) {
-            System.out.print(temp.data );
-            temp = temp.next;
-        }
-    }
 
-    // method to print out the list
+    // method to print out the stack
     public void printStack() {
         Node<E> temp;
         temp = head;

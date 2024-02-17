@@ -1,12 +1,13 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 // Name: Phillip Bell
 // Class: CS 3305/Section 04
 // Term: Spring 2024
 // Instructor: Dr. Haddad
 // Assignment: 4
 // IDE Name: Inteli J
+import java.util.InputMismatchException;
+import java.util.Locale;
+import java.util.Scanner;
+
 public class CheckPalindrome {
 
     public static void main (String[] args)
@@ -84,12 +85,13 @@ public class CheckPalindrome {
                         }
                     }
 
-                    if (reversed.equals(data)){
+                    if (reversed.toLowerCase(Locale.ROOT).equals(data.toLowerCase())){
                         System.out.print("Palindrome");
                     }
                     else {
                         System.out.print("Not Palindrome");
                     }
+                    reversed="";
 
                 }
             }
