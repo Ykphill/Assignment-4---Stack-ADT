@@ -7,6 +7,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+//this class reverses strings
 public class ReverseString {
 
     public static void main (String[] args)
@@ -71,14 +72,21 @@ public class ReverseString {
                     //prints Stack before adding node
 
 
-                    //reverse string
+                    //reverse string by adding words too stack
                     for (int i = 0; i <data.length() ; i++) {
-                        //if word end then it adds to stck
-                        if(data.charAt(i)==' '|| i+1==data.length()){
+                        //if word end then it adds to stack
+                        if(data.charAt(i)==' '){
                             myStack.push(word);
                             word="";
                             spaces++;
-                        }//create words
+                        }
+                        //if it is the last word
+                        else if(i+1==data.length()){
+                            word=word+data.charAt(i);
+                            myStack.push(word);
+                            word="";
+                            spaces++;
+                        }//add char to make words
                         else {
                             word=word+data.charAt(i);
                         }
@@ -87,6 +95,7 @@ public class ReverseString {
 
                     System.out.print("\nReversed string:\t");
 
+                    //calls stack and pops out all element
                     for (int i = 1; i <data.length() ; i++) {
                         if(myStack.tail != null) {
 
@@ -98,12 +107,6 @@ public class ReverseString {
 
                 }
             }
-
-
-
-
-
-
 
 
 

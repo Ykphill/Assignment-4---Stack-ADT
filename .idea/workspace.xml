@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62f64b1a-6a56-43dd-bac4-62b4fb2689a4" name="Changes" comment="Initial push 4 TestMyStack.java">
+    <list default="true" id="62f64b1a-6a56-43dd-bac4-62b4fb2689a4" name="Changes" comment="Reverse string fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReverseString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestMyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestMyStack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +63,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ReverseString" />
-        <item itemvalue="Application.TestMyStack" />
         <item itemvalue="Application.CheckPalindrome" />
+        <item itemvalue="Application.TestMyStack" />
       </list>
     </recent_temporary>
   </component>
@@ -141,13 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1708138424101</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Reverse string fix">
+      <created>1708142011176</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708142011176</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial pus" />
     <MESSAGE value="Initial push" />
     <MESSAGE value="Initial push 4 TestMyStack.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial push 4 TestMyStack.java" />
+    <MESSAGE value="Reverse string fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverse string fix" />
   </component>
 </project>

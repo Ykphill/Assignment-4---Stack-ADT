@@ -8,6 +8,7 @@ import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
+//this class check if the user enters a palindrome
 public class CheckPalindrome {
 
     public static void main (String[] args)
